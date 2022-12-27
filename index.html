@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" href="img/logo.png" type="image/png" size="16x16">
+    
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Movies Review</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- fontawesome -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/all.min.css'>
+    <!-- Css -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/home.css'>
+    
+</head>
+<body>
+    <!-- Menu -->
+    <div class="left-menu">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">popular</a></li>
+                <li><a href="#">trending</a></li>
+                <li><a href="#">top rated</a></li>
+                <li><a href="#">upcoming</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <div class="nav-footer">
+                <p>copyright <span class="footer-name">Ahmed Ismail</span> &copy; all rights reserved.</p>
+            </div>
+        </nav>
+        <div class="header-left">
+            <a href="index.html"><img src="img/face-logo.png"></a>
+            
+            <button class="line-menu-btn open"><span class="line"></span></button> <!-- Line menu -->
+
+            <div class="header-icon">
+                <a href="#"><i class="fas fa-share-alt"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ./Menu -->
+
+    <!-- page content -->
+    <main class="page-content">
+        <div class="search">
+            <div class="search-center">
+                <input class="search-input" type="text" placeholder="Search For A Movie">
+                <span class="search-cross">x</span>
+               <span class="search-icon"> <a href="#search-result"><i class="fa fa-search"></i></a></span>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <!-- <h2>most popular</h2> -->
+        </div>
+        <!-- Slider -->
+        <div class="slider-top-rated">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper img-top-rated-container"><!-- images from api --></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> <!-- ./Slider -->
+
+        <!-- Movies display -->
+        <div class="movie-display-content" id="search-result">
+            <!-- <div class="movie-item">
+                <div class="movie-display__img">
+                    <img src="img/cinema.png">
+                    <i class="fas fa-star"></i>
+                    <span>7.5</span>
+                </div>
+            </div> -->
+        </div>
+
+    </main>
+    <!-- ./page-content -->
+
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="js/swiper-index.js"></script> -->
+    <script type="text/javascript">
+        // Notice how this gets configured before we load Font Awesome
+        window.FontAwesomeConfig = { autoReplaceSvg: false }
+        </script>
+    
+    <script src='js/all.min.js'></script>
+    <script src='js/menu.js'></script>
+    <script src='js/Api_script.js'></script>
+</body>
+</html>
